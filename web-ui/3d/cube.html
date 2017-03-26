@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>正方体旋转</title>
+  <link rel="stylesheet" type="text/css" href="cube.css"/>
+  <style type="text/css">
+	body{
+		background:#86772A;
+	}
+	.wrap{
+		margin:252px auto;
+	}
+	@keyframes cube{
+		0%{
+			transform:rotateY(0deg) rotateX(-36deg) rotateZ(-36deg);
+		}
+		50%{
+			transform:rotateY(180deg) rotateX(-36deg) rotateZ(-36deg);
+		}
+		100%{
+			transform:rotateY(360deg) rotateX(-36deg) rotateZ(-36deg);
+		}
+	}
+	.cube{
+		animation:cube 3s linear infinite;
+	}
+  </style>
+ </head>
+ <body>
+  <div id="" class="wrap">
+	<div id="" class="cube">
+		<div class="cube-front"></div>
+		<div class="cube-right"></div>
+		<div class="cube-back"></div>
+		<div class="cube-left"></div>
+		<div class="cube-top"></div>
+		<div class="cube-bottom"></div>
+	</div>
+  </div>
+ </body>
+</html>
